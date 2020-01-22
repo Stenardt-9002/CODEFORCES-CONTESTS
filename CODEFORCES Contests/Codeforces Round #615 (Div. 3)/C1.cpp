@@ -27,9 +27,9 @@ vector<lld> cgettwodivsor(lld n,lld ntqual)
         {
           v1.push_back(i);
           v1.push_back(n/i);
-          std::cout << "REACHED" << '\n';
-          for (auto it = v1.begin(); it != v1.end(); ++it)
-             cout << *it<< ' ';
+          // std::cout << "REACHED" << '\n';
+          // for (auto it = v1.begin(); it != v1.end(); ++it)
+          //    cout << *it<< ' ';
           return v1;
         }
       }
