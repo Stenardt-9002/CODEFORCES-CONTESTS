@@ -31,6 +31,7 @@ data_tipe procvess(string stufg)
     }
     a1.voewl_count = vowel_count;
     a1.lastvowel = last_chr;
+    a1.str1 = stufg;
     return a1;
 
 }
@@ -47,15 +48,17 @@ int main(int argc, char const *argv[])
     // string <vector> arr1(num_ofwords);
     // vector<string> arr1(num_ofwords);
     vector<data_tipe> arr1(num_ofwords);
+    data_tipe str1_inp ; 
 
     for (int i1 = 0; i1 < num_ofwords; i1++)
     {
-        data_tipe str1_inp ; 
         string atr1;
         cin>>atr1;
-        str1_inp.str1 = atr1;
+        // str1_inp.str1 = atr1;
+        str1_inp = procvess(atr1);
 
-        arr1[i1] = atr1;
+        // arr1[i1] = atr1;
+        
 
 
 
